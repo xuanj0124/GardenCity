@@ -1,0 +1,65 @@
+
+/* general */
+header {
+    height: 150px;
+}
+footer {
+    position: relative;
+    font-size: 12px;
+}
+main {
+    height: relative;
+}
+h1 {
+    color:green;
+    font-weight: normal;
+    font-family: cursive;
+}
+h2 {
+    color: #9CCC65;
+}
+h3 {
+    font-size: 30px;
+    color: #484846;
+}
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+input {
+    background-color: whitesmoke;
+}
+button {
+    color: beige;
+    background-color: green;
+}
+nav {
+    font-family: Century Gothic;
+    font-weight: 600;
+    text-align: right;
+    word-spacing: 10px;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: green;
+}
+* {
+    background-color: #FEFCF2;
+}
+
+/* mainpage */
+
+.main-products {
+    height: 200px
+}
+
+/* productpage */
+.sort {
+    float: right;
+}
+
+/* loginpage */
+.login {
+    position: relative;
+}

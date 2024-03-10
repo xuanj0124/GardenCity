@@ -1,13 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Register from "./pages/register";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Products from "./pages/products";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const Layout = () => {
+  return (
+    <div className="layout">
+      <div className="page-container">
+        <div className="content-wrapper">
+          <Navbar />
+        </div>
+        <Outlet />
+        <Footer />
+      </div>
+    </div>
+  );
+};
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/login", element: <Login /> },
+      { path: "/register", element: <Register /> },
+      { path: "/products", element: <Products /> },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

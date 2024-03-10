@@ -1,0 +1,17 @@
+.footer-nav {
+  display: flex;
+  justify-content: right;
+  padding: 15px;
+}
+.footer-link {
+  color: white;
+  font-weight: 600;
+  margin: 10px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+footer-link:active {
+  color: grey;
+}

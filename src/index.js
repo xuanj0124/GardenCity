@@ -9,6 +9,8 @@ import Register from "./pages/register";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Products from "./pages/products";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
 const Layout = () => {
   return (
@@ -23,6 +25,7 @@ const Layout = () => {
     </div>
   );
 };
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +35,8 @@ const router = createBrowserRouter([
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
       { path: "/products", element: <Products /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
     ],
   },
 ]);

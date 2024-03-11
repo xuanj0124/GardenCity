@@ -23,7 +23,9 @@ const Products = () => {
   return (<div>
     <div>
       <input className="search" type="text" placeholder="Search" />
+      <div className='product-dropdown'>
       <Dropdown />
+      </div>
     </div>
     <div className="flowers">{
       flowers.map((flower) => {

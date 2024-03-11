@@ -1,4 +1,43 @@
 .trending {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  background-color: beige;
+  padding: 30px;
+  padding-top: 60px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.container {
+  background-color: #a6cc7a;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.border {
+  border-bottom: 1px solid beige;
+  width: 100%;
+}
+
+.content {
+  padding: 0 10px 0 10px;
+  font-size: x-large;
+  font-family: cursive;
+  font-weight: 300;
+  color: beige;
+}
+
+.search {
+    border: 1px solid beige;
+    background-color: #e6e8eb;
+}
+
+.carousel {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 15px; */
+  padding-top: 20px;
+  padding-bottom: 30px;
 }

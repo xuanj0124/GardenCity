@@ -20,12 +20,14 @@
   color: #5d9600;
   font-size: xxx-large;
   font-family: cursive;
+  padding-left: 15px;
 }
 .slogan {
   color: #a4d554;
   font-size: large;
   font-weight: 500;
   font-family: Century Gothic;
+  padding-left: 20px;
 }
 .search {
     height:5px;

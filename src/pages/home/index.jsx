@@ -1,5 +1,6 @@
-import React from 'react'
-import './home.css'
+import React from 'react';
+import ProductSlider from '../../components/ProductSlider'
+import './home.css';
 
 const trending = [
   {
@@ -18,23 +19,38 @@ const trending = [
   },
 ];
 
+const Divider = ({ children }) => {
+  return (
+    <div className="container">
+      <div className="border" />
+      <span className="content">
+        {children}
+      </span>
+      <div className="border" />
+    </div>
+  );
+};
+
 const Home = () => {
   return (
     <div>
+
       <div>
         <input className='search' type="text" placeholder="Search" />
       </div>
-      <div>
-        <div className="trending">{
-          trending.map((flower) => {
-            return <div key={flower.productId}>
-              <img src={flower.image} alt={flower.name} height={200} width={200} />
-              <h1>{flower.name}</h1>
-              <p>{flower.farmer}</p>
-              <p>${flower.price}</p>
-            </div>
-          })}
-        </div>
+
+      <div className='carousel'><ProductSlider /></div>
+      <div><Divider>Trending</Divider></div>
+
+      <div className="trending">{
+        trending.map((flower) => {
+          return <div key={flower.productId}>
+            <img src={flower.image} alt={flower.name} height={200} width={200} />
+            <h1>{flower.name}</h1>
+            <p>{flower.farmer}</p>
+            <p>${flower.price}</p>
+          </div>
+        })}
       </div>
     </div>
 

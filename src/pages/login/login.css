@@ -1,24 +1,24 @@
 .auto-form-container {
   margin: 0;
   padding: 0;
-  color: green;
+  color: #63802b;
   font-weight: bold;
   text-align: center;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(180deg, beige, #9ccc65, beige);
+  background-image: linear-gradient(180deg, #edf5df, #ddedbe, #edf5df);
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .auto-form-container {
     padding: 2.5rem;
     border: 1px solid beige;
     border-radius: 10px;
     margin: 0.5rem;
   }
-}
+} */
 
 .auto-form-container,
 .login-form,
@@ -44,7 +44,7 @@ input {
 }
 
 button {
-  color: green;
+  color: #63802b;
   font-weight: bold;
   font-size: large;
   border: none;
@@ -52,6 +52,10 @@ button {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+button:active {
+  color: grey;
 }
 
 #registerLink {
